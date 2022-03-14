@@ -7,6 +7,7 @@ namespace Hoone
     public class EraMaja : Hoone
     {
         int suurus;
+        int arv;
 
 
 
@@ -39,6 +40,12 @@ namespace Hoone
                 return staatus;
             }
         }
+        public int Arv
+        {
+            set { arv = value; }
+            get { return arv; }
+        }
+
         public override void NaitaInfo()
         {
             Console.WriteLine($"Ma olen {Staatus}");
